@@ -1,0 +1,57 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200ae2a: s_test_psram at /Users/wangjiaqi/esp/esp-idf/components/esp_psram/esp_psram.c:469
+[0m
+[0;33m--- 0x403789fa: esp_crosscore_isr at /Users/wangjiaqi/esp/esp-idf/components/esp_system/crosscore_int.c:73
+--- 0x40377915: _xt_lowint1 at /Users/wangjiaqi/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42007b4a: uart_ll_get_txfifo_len at /Users/wangjiaqi/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:410
+---  (inlined by) uart_tx_char at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+--- 0x42008a5f: uart_write at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x4200a256: esp_vfs_write at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x420293aa: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+--- 0x42009b6c: console_write at /Users/wangjiaqi/esp/esp-idf/components/esp_vfs_console/vfs_console.c:71
+--- 0x4200a256: esp_vfs_write at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x42027da6: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+--- 0x42027381: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x420273d2: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+--- 0x42027ab9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x42031b8b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x42031592: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+--- 0x42027e1d: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x4203b3e2: esp_log_writev at /Users/wangjiaqi/esp/esp-idf/components/log/src/os/log_write.c:34
+--- 0x40388959: esp_log_write at /Users/wangjiaqi/esp/esp-idf/components/log/src/os/log_write.c:44
+--- 0x420109b9: avi_player_play_from_file at /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/managed_components/espressif__avi_player/avi_player.c:353 (discriminator 1)
+--- 0x4200b4c9: avi_play_task at /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/main/decode.c:359
+--- 0x403815a1: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: read failed: [Errno 6] Device not configured[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: read failed: [Errno 6] Device not configured[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- 0x403789fa: esp_crosscore_isr at /Users/wangjiaqi/esp/esp-idf/components/esp_system/crosscore_int.c:73
+--- 0x40377915: _xt_lowint1 at /Users/wangjiaqi/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x42007b4a: uart_ll_get_txfifo_len at /Users/wangjiaqi/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:410
+---  (inlined by) uart_tx_char at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+--- 0x42008a5f: uart_write at /Users/wangjiaqi/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:243
+--- 0x4200a256: esp_vfs_write at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x420293aa: write at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/syscalls/syswrite.c:11 (discriminator 1)
+--- 0x42009b6c: console_write at /Users/wangjiaqi/esp/esp-idf/components/esp_vfs_console/vfs_console.c:71
+--- 0x4200a256: esp_vfs_write at /Users/wangjiaqi/esp/esp-idf/components/vfs/vfs.c:945 (discriminator 4)
+--- 0x42027da6: __swrite at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/stdio.c:94
+--- 0x42027381: __sflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:224
+--- 0x420273d2: _fflush_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fflush.c:278
+--- 0x42027ab9: __sfvwrite_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/fvwrite.c:251
+--- 0x42031b8b: __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:429
+---  (inlined by) __sprint_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:399
+--- 0x42031592: _vfprintf_r at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:1774 (discriminator 1)
+--- 0x42027e1d: vprintf at /builds/idf/crosstool-NG/.build/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+--- 0x4203b3e2: esp_log_writev at /Users/wangjiaqi/esp/esp-idf/components/log/src/os/log_write.c:34
+--- 0x40388959: esp_log_write at /Users/wangjiaqi/esp/esp-idf/components/log/src/os/log_write.c:44
+--- 0x4200b4c2: avi_play_task at /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/main/decode.c:356 (discriminator 1)
+--- 0x403815a1: vPortTaskWrapper at /Users/wangjiaqi/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[1;31m--- Error: read failed: [Errno 6] Device not configured[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[1;31m--- Error: read failed: [Errno 6] Device not configured[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;

@@ -1,0 +1,589 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=11648h ( 71240) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00021670 vaddr=3fc9ac00 size=03068h ( 12392) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=000246e0 vaddr=40374000 size=0b938h ( 47416) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3a584h (238980) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006a5ac vaddr=4037f938 size=0b204h ( 45572) load[0m
+[0;32mI (168) esp_image: segment 5: paddr=000757b8 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (177) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (177) boot: Disabling RNG early entropy source...[0m
+[0;32mI (187) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (188) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (188) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (190) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (194) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (198) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (202) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (207) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (212) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (217) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (222) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (226) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (230) esp_psram: Speed: 40MHz[0m
+[0;32mI (233) cpu_start: Multicore app[0m
+[0;32mI (967) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (976) cpu_start: Pro cpu start user code[0m
+[0;32mI (976) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (976) app_init: Application information:[0m
+[0;32mI (976) app_init: Project name:     source-code[0m
+[0;32mI (980) app_init: App version:      fcc949d[0m
+[0;32mI (984) app_init: Compile time:     Oct  7 2025 21:57:44[0m
+[0;32mI (989) app_init: ELF file SHA256:  424187557...[0m
+[0;32mI (993) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (998) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1001) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1005) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1009) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1016) heap_init: At 3FC9E688 len 0004B088 (300 KiB): RAM[0m
+[0;32mI (1021) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1026) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1032) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (1037) esp_psram: Adding pool of 8192K of PSRAM memory to heap allocator[0m
+[0;32mI (1045) spi_flash: detected chip: generic[0m
+[0;32mI (1047) spi_flash: flash io: dio[0m
+[0;32mI (1051) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1057) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1064) main_task: Started on CPU0[0m
+[0;32mI (1094) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1094) main_task: Calling app_main()[0m
+[0;32mI (1094) main: Init LCD...[0m
+[0;32mI (1094) bsp: ST7789 init start...[0m
+[0;32mI (1104) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1104) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1114) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1584) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (1614) main: Mount SD card...[0m
+[0;32mI (1614) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1614) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1624) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1684) bsp: SD card mounted successfully[0m
+[0;32mI (1684) bsp: ==== SD Card Info ====[0m
+[0;32mI (1684) bsp: Name: SD32G[0m
+[0;32mI (1684) bsp: Capacity: 30436 MB[0m
+[0;32mI (1684) bsp: Speed: 40000 kHz[0m
+[0;32mI (1694) bsp: Type: SDHC/SDXC[0m
+[0;32mI (1694) bsp: ==== Listing files under: /sdcard/am_nr ====[0m
+[0;32mI (1704) bsp: [FILE] QJ1.AVI (27774300 bytes)[0m
+[0;32mI (1704) bsp: [FILE] GC1.AVI (28472316 bytes)[0m
+[0;32mI (1704) bsp: [FILE] CD1.AVI (42907082 bytes)[0m
+[0;32mI (1714) bsp: [FILE] QJ2.AVI (11176046 bytes)[0m
+[0;32mI (1714) bsp: [FILE] _QJ~6.AVI (4096 bytes)[0m
+[0;32mI (1714) bsp: ==== End of list ====[0m
+[0;32mI (1724) main: Start AVI play task[0m
+[0;32mI (1724) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1724) main_task: Returned from app_main()[0m
+[0;32mI (1974) avifile: Find a video stream[0m
+[0;32mI (1974) avifile: Find a audio stream[0m
+[0;32mI (1974) avifile: movi pos:9906, size:28397078[0m
+[0;31mE (1984) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (1984) main: decode failed[0m
+[0;31mE (2024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2024) main: decode failed[0m
+[0;31mE (2054) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2054) main: decode failed[0m
+[0;31mE (2094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2094) main: decode failed[0m
+[0;31mE (2124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2124) main: decode failed[0m
+[0;31mE (2164) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2164) main: decode failed[0m
+[0;31mE (2194) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2194) main: decode failed[0m
+[0;31mE (2224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2224) main: decode failed[0m
+[0;31mE (2264) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2264) main: decode failed[0m
+[0;31mE (2284) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2294) main: decode failed[0m
+[0;31mE (2324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2324) main: decode failed[0m
+[0;31mE (2354) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2354) main: decode failed[0m
+[0;31mE (2394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2394) main: decode failed[0m
+[0;31mE (2424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2424) main: decode failed[0m
+[0;31mE (2454) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2454) main: decode failed[0m
+[0;31mE (2494) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2494) main: decode failed[0m
+[0;31mE (2524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2524) main: decode failed[0m
+[0;31mE (2564) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2564) main: decode failed[0m
+[0;31mE (2594) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2594) main: decode failed[0m
+[0;31mE (2624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2624) main: decode failed[0m
+[0;31mE (2654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2654) main: decode failed[0m
+[0;31mE (2684) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2694) main: decode failed[0m
+[0;31mE (2724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2724) main: decode failed[0m
+[0;31mE (2754) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2754) main: decode failed[0m
+[0;31mE (2794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2794) main: decode failed[0m
+[0;31mE (2824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2824) main: decode failed[0m
+[0;31mE (2864) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2864) main: decode failed[0m
+[0;31mE (2884) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2894) main: decode failed[0m
+[0;31mE (2924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2924) main: decode failed[0m
+[0;31mE (2954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2954) main: decode failed[0m
+[0;31mE (2984) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (2984) main: decode failed[0m
+[0;31mE (3024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3024) main: decode failed[0m
+[0;31mE (3054) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3054) main: decode failed[0m
+[0;31mE (3094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3094) main: decode failed[0m
+[0;31mE (3124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3124) main: decode failed[0m
+[0;31mE (3154) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3154) main: decode failed[0m
+[0;31mE (3184) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3194) main: decode failed[0m
+[0;31mE (3224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3224) main: decode failed[0m
+[0;31mE (3264) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3264) main: decode failed[0m
+[0;31mE (3294) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3294) main: decode failed[0m
+[0;31mE (3324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3324) main: decode failed[0m
+[0;31mE (3354) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3354) main: decode failed[0m
+[0;31mE (3394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3394) main: decode failed[0m
+[0;31mE (3424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3424) main: decode failed[0m
+[0;31mE (3464) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3464) main: decode failed[0m
+[0;31mE (3484) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3494) main: decode failed[0m
+[0;31mE (3524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3524) main: decode failed[0m
+[0;31mE (3564) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3564) main: decode failed[0m
+[0;31mE (3584) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3594) main: decode failed[0m
+[0;31mE (3624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3624) main: decode failed[0m
+[0;31mE (3654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3654) main: decode failed[0m
+[0;31mE (3694) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3694) main: decode failed[0m
+[0;31mE (3724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3724) main: decode failed[0m
+[0;31mE (3754) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3754) main: decode failed[0m
+[0;31mE (3794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3794) main: decode failed[0m
+[0;31mE (3824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3824) main: decode failed[0m
+[0;31mE (3864) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3864) main: decode failed[0m
+[0;31mE (3884) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3894) main: decode failed[0m
+[0;31mE (3924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3924) main: decode failed[0m
+[0;31mE (3954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3954) main: decode failed[0m
+[0;31mE (3994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (3994) main: decode failed[0m
+[0;31mE (4024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4024) main: decode failed[0m
+[0;31mE (4054) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4054) main: decode failed[0m
+[0;31mE (4094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4094) main: decode failed[0m
+[0;31mE (4124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4124) main: decode failed[0m
+[0;31mE (4164) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4164) main: decode failed[0m
+[0;31mE (4194) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4194) main: decode failed[0m
+[0;31mE (4224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4224) main: decode failed[0m
+[0;31mE (4254) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4254) main: decode failed[0m
+[0;31mE (4284) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4294) main: decode failed[0m
+[0;31mE (4324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4324) main: decode failed[0m
+[0;31mE (4354) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4354) main: decode failed[0m
+[0;31mE (4394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4394) main: decode failed[0m
+[0;31mE (4424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4424) main: decode failed[0m
+[0;31mE (4454) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4464) main: decode failed[0m
+[0;31mE (4484) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4494) main: decode failed[0m
+[0;31mE (4524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4524) main: decode failed[0m
+[0;31mE (4564) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4564) main: decode failed[0m
+[0;31mE (4584) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4594) main: decode failed[0m
+[0;31mE (4624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4624) main: decode failed[0m
+[0;31mE (4654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4654) main: decode failed[0m
+[0;31mE (4694) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4694) main: decode failed[0m
+[0;31mE (4724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4724) main: decode failed[0m
+[0;31mE (4754) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4754) main: decode failed[0m
+[0;31mE (4794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4794) main: decode failed[0m
+[0;31mE (4824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4824) main: decode failed[0m
+[0;31mE (4854) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4864) main: decode failed[0m
+[0;31mE (4884) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4894) main: decode failed[0m
+[0;31mE (4924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4924) main: decode failed[0m
+[0;31mE (4954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4954) main: decode failed[0m
+[0;31mE (4994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (4994) main: decode failed[0m
+[0;31mE (5024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5024) main: decode failed[0m
+[0;31mE (5054) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5054) main: decode failed[0m
+[0;31mE (5094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5094) main: decode failed[0m
+[0;31mE (5124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5124) main: decode failed[0m
+[0;31mE (5164) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5164) main: decode failed[0m
+[0;31mE (5194) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5194) main: decode failed[0m
+[0;31mE (5224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5224) main: decode failed[0m
+[0;31mE (5254) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5254) main: decode failed[0m
+[0;31mE (5284) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5284) main: decode failed[0m
+[0;31mE (5324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5324) main: decode failed[0m
+[0;31mE (5354) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5354) main: decode failed[0m
+[0;31mE (5394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5394) main: decode failed[0m
+[0;31mE (5424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5424) main: decode failed[0m
+[0;31mE (5454) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5464) main: decode failed[0m
+[0;31mE (5484) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5494) main: decode failed[0m
+[0;31mE (5524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5524) main: decode failed[0m
+[0;31mE (5554) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5554) main: decode failed[0m
+[0;31mE (5584) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5594) main: decode failed[0m
+[0;31mE (5624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5624) main: decode failed[0m
+[0;31mE (5654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5654) main: decode failed[0m
+[0;31mE (5694) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5694) main: decode failed[0m
+[0;31mE (5724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5724) main: decode failed[0m
+[0;31mE (5764) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5764) main: decode failed[0m
+[0;31mE (5794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5794) main: decode failed[0m
+[0;31mE (5824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5824) main: decode failed[0m
+[0;31mE (5854) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5864) main: decode failed[0m
+[0;31mE (5884) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5894) main: decode failed[0m
+[0;31mE (5924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5924) main: decode failed[0m
+[0;31mE (5954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5954) main: decode failed[0m
+[0;31mE (5994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (5994) main: decode failed[0m
+[0;31mE (6024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6024) main: decode failed[0m
+[0;31mE (6054) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6054) main: decode failed[0m
+[0;31mE (6094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6094) main: decode failed[0m
+[0;31mE (6124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6124) main: decode failed[0m
+[0;31mE (6164) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6164) main: decode failed[0m
+[0;31mE (6184) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6194) main: decode failed[0m
+[0;31mE (6224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6224) main: decode failed[0m
+[0;31mE (6254) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6254) main: decode failed[0m
+[0;31mE (6294) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6294) main: decode failed[0m
+[0;31mE (6324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6324) main: decode failed[0m
+[0;31mE (6354) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6354) main: decode failed[0m
+[0;31mE (6394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6394) main: decode failed[0m
+[0;31mE (6424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6424) main: decode failed[0m
+[0;31mE (6454) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6464) main: decode failed[0m
+[0;31mE (6484) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6494) main: decode failed[0m
+[0;31mE (6524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6524) main: decode failed[0m
+[0;31mE (6554) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6554) main: decode failed[0m
+[0;31mE (6584) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6594) main: decode failed[0m
+[0;31mE (6624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6624) main: decode failed[0m
+[0;31mE (6654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6654) main: decode failed[0m
+[0;31mE (6694) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6694) main: decode failed[0m
+[0;31mE (6724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6724) main: decode failed[0m
+[0;31mE (6764) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6764) main: decode failed[0m
+[0;31mE (6784) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6794) main: decode failed[0m
+[0;31mE (6824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6824) main: decode failed[0m
+[0;31mE (6854) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6854) main: decode failed[0m
+[0;31mE (6894) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6894) main: decode failed[0m
+[0;31mE (6924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6924) main: decode failed[0m
+[0;31mE (6954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6954) main: decode failed[0m
+[0;31mE (6994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (6994) main: decode failed[0m
+[0;31mE (7024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7024) main: decode failed[0m
+[0;31mE (7054) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7064) main: decode failed[0m
+[0;31mE (7094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7094) main: decode failed[0m
+[0;31mE (7124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7124) main: decode failed[0m
+[0;31mE (7164) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7164) main: decode failed[0m
+[0;31mE (7184) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7194) main: decode failed[0m
+[0;31mE (7224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7224) main: decode failed[0m
+[0;31mE (7254) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7254) main: decode failed[0m
+[0;31mE (7294) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7294) main: decode failed[0m
+[0;31mE (7324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7324) main: decode failed[0m
+[0;31mE (7354) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7354) main: decode failed[0m
+[0;31mE (7394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7394) main: decode failed[0m
+[0;31mE (7424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7424) main: decode failed[0m
+[0;31mE (7464) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7464) main: decode failed[0m
+[0;31mE (7494) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7494) main: decode failed[0m
+[0;31mE (7524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7524) main: decode failed[0m
+[0;31mE (7554) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7554) main: decode failed[0m
+[0;31mE (7594) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7594) main: decode failed[0m
+[0;31mE (7624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7624) main: decode failed[0m
+[0;31mE (7654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7654) main: decode failed[0m
+[0;31mE (7694) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7694) main: decode failed[0m
+[0;31mE (7724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7724) main: decode failed[0m
+[0;31mE (7764) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7764) main: decode failed[0m
+[0;31mE (7794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7794) main: decode failed[0m
+[0;31mE (7824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7824) main: decode failed[0m
+[0;31mE (7854) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7854) main: decode failed[0m
+[0;31mE (7894) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7894) main: decode failed[0m
+[0;31mE (7924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7924) main: decode failed[0m
+[0;31mE (7954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7954) main: decode failed[0m
+[0;31mE (7994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (7994) main: decode failed[0m
+[0;31mE (8024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8024) main: decode failed[0m
+[0;31mE (8064) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8064) main: decode failed[0m
+[0;31mE (8094) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8094) main: decode failed[0m
+[0;31mE (8124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8124) main: decode failed[0m
+[0;31mE (8164) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8164) main: decode failed[0m
+[0;31mE (8184) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8194) main: decode failed[0m
+[0;31mE (8224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8224) main: decode failed[0m
+[0;31mE (8254) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8254) main: decode failed[0m
+[0;31mE (8294) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8294) main: decode failed[0m
+[0;31mE (8324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8324) main: decode failed[0m
+[0;31mE (8364) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8364) main: decode failed[0m
+[0;31mE (8384) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8394) main: decode failed[0m
+[0;31mE (8424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8424) main: decode failed[0m
+[0;31mE (8464) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8464) main: decode failed[0m
+[0;31mE (8484) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8494) main: decode failed[0m
+[0;31mE (8524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8524) main: decode failed[0m
+[0;31mE (8554) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8554) main: decode failed[0m
+[0;31mE (8594) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8594) main: decode failed[0m
+[0;31mE (8624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8624) main: decode failed[0m
+[0;31mE (8654) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8654) main: decode failed[0m
+[0;31mE (8694) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8694) main: decode failed[0m
+[0;31mE (8724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8724) main: decode failed[0m
+[0;31mE (8764) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8764) main: decode failed[0m
+[0;31mE (8794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8794) main: decode failed[0m
+[0;31mE (8824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8824) main: decode failed[0m
+[0;31mE (8854) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8854) main: decode failed[0m
+[0;31mE (8894) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8894) main: decode failed[0m
+[0;31mE (8924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8924) main: decode failed[0m
+[0;31mE (8954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8954) main: decode failed[0m
+[0;31mE (8994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (8994) main: decode failed[0m
+[0;31mE (9024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9024) main: decode failed[0m
+[0;31mE (9064) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9064) main: decode failed[0m
+[0;31mE (9084) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9094) main: decode failed[0m
+[0;31mE (9124) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9124) main: decode failed[0m
+[0;31mE (9154) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9154) main: decode failed[0m
+[0;31mE (9194) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9194) main: decode failed[0m
+[0;31mE (9224) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9224) main: decode failed[0m
+[0;31mE (9254) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9254) main: decode failed[0m
+[0;31mE (9294) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9294) main: decode failed[0m
+[0;31mE (9324) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9324) main: decode failed[0m
+[0;31mE (9364) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9364) main: decode failed[0m
+[0;31mE (9394) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9394) main: decode failed[0m
+[0;31mE (9424) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9424) main: decode failed[0m
+[0;31mE (9454) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9464) main: decode failed[0m
+[0;31mE (9484) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9494) main: decode failed[0m
+[0;31mE (9524) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9524) main: decode failed[0m
+[0;31mE (9554) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9554) main: decode failed[0m
+[0;31mE (9594) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9594) main: decode failed[0m
+[0;31mE (9624) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9624) main: decode failed[0m
+[0;31mE (9664) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9664) main: decode failed[0m
+[0;31mE (9684) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9694) main: decode failed[0m
+[0;31mE (9724) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9724) main: decode failed[0m
+[0;31mE (9764) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9764) main: decode failed[0m
+[0;31mE (9794) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9794) main: decode failed[0m
+[0;31mE (9824) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9824) main: decode failed[0m
+[0;31mE (9854) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9854) main: decode failed[0m
+[0;31mE (9894) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9894) main: decode failed[0m
+[0;31mE (9924) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9924) main: decode failed[0m
+[0;31mE (9954) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9954) main: decode failed[0m
+[0;31mE (9994) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (9994) main: decode failed[0m
+[0;31mE (10024) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (10024) main: decode failed[0m
+[0;31mE (10064) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (10064) main: decode failed[0m
+[0;31mE (10084) JPEG_DEC: Output buffer address is not 16-byte aligned. Please use jpeg_calloc_align() to allocate output buffer.[0m
+[1;31mE (10094) main: decode failed[0

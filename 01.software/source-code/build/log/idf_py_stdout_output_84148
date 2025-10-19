@@ -1,0 +1,2340 @@
+[0;32mI (274) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (278) efuse_inESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=122c8h ( 74440) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=000222f0 vaddr=3fc9ae00 size=03084h ( 12420) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0002537c vaddr=40374000 size=0ac9ch ( 44188) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b344h (242500) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0006b36c vaddr=4037ec9c size=0c154h ( 49492) load[0m
+[0;32mI (170) esp_image: segment 5: paddr=000774c8 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) octal_psram: ECC is enabled[0m
+[0;32mI (189) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (190) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (194) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (199) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (207) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (212) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (216) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (221) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (226) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (231) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (234) esp_psram: Speed: 40MHz[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) app_init: Application information:[0m
+[0;32mI (252) app_init: Project name:     source-code[0m
+[0;32mI (256) app_init: App version:      fcc949d[0m
+[0;32mI (260) app_init: Compile time:     Oct  8 2025 23:01:53[0m
+[0;32mI (265) app_init: ELF file SHA256:  80f81ead8...[0m
+[0;32mI (270) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (274) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (278) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (282) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (292) heap_init: At 3FC9E8C0 len 0004AE50 (299 KiB): RAM[0m
+[0;32mI (297) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (302) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (308) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (313) esp_psram: Adding pool of 7680K of PSRAM memory to heap allocator[0m
+[0;32mI (320) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;32mI (326) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (332) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (339) main_task: Started on CPU0[0m
+[0;32mI (349) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (349) main_task: Calling app_main()[0m
+[0;32mI (349) main: Init LCD + SD...[0m
+[0;32mI (359) bsp: ST7789 init start...[0m
+[0;32mI (359) gpio: GPIO[7]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (369) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (379) gpio: GPIO[16]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (839) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (839) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (839) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (849) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (899) bsp: SD card mounted successfully[0m
+[0;32mI (899) bsp: ==== SD Card Info ====[0m
+[0;32mI (899) bsp: Name: SD32G[0m
+[0;32mI (899) bsp: Capacity: 30436 MB[0m
+[0;32mI (899) bsp: Speed: 40000 kHz[0m
+[0;32mI (909) bsp: Type: SDHC/SDXC[0m
+[0;32mI (909) bsp: ==== Listing files under: /sdcard/stv ====[0m
+[0;32mI (919) bsp: [FILE] CDLOVE3.AVI (30499948 bytes)[0m
+[0;32mI (919) bsp: [FILE] CDLOVE1.AVI (25605576 bytes)[0m
+[0;32mI (919) bsp: [FILE] CDLOVE2.AVI (36760142 bytes)[0m
+[0;32mI (929) bsp: [FILE] CDLOVE4.AVI (18352282 bytes)[0m
+[0;32mI (929) bsp: [FILE] CDLOVE5.AVI (20459844 bytes)[0m
+[0;32mI (939) bsp: [FILE] CDLOVE6.AVI (73066506 bytes)[0m
+[0;32mI (939) bsp: [FILE] CDLOVE7.AVI (128649146 bytes)[0m
+[0;32mI (939) bsp: [FILE] CDLOVE8.AVI (64718216 bytes)[0m
+[0;32mI (949) bsp: ==== End of list ====[0m
+[0;32mI (959) decode: playlist built: 8 files[0m
+[0;32mI (959) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (959) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (959) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (969) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (969) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (979) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (979) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (979) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (989) main: playlist count=8[0m
+[0;32mI (989) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1029) decode: blit_task start (Core=0)[0m
+[0;32mI (1039) decode: playlist built: 8 files[0m
+[0;32mI (1039) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (1039) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (1039) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (1039) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (1049) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1049) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1049) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1059) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1059) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1069) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1079) main_task: Returned from app_main()[0m
+[0;32mI (1079) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1089) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (1089) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1339) avifile: Find a video stream[0m
+[0;32mI (1339) avifile: Find a audio stream[0m
+[0;32mI (1339) avifile: movi pos:9906, size:30411670[0m
+[0;32mI (1399) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (1399) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1649) avifile: Find a video stream[0m
+[0;32mI (1649) avifile: Find a audio stream[0m
+[0;32mI (1649) avifile: movi pos:9906, size:25530338[0m
+[0;32mI (1749) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (1749) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1989) avifile: Find a video stream[0m
+[0;32mI (1989) avifile: movi pos:5678, size:36692540[0m
+[0;32mI (2099) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (2099) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (2329) avifile: Find a video stream[0m
+[0;32mI (2329) avifile: Find a audio stream[0m
+[0;32mI (2329) avifile: movi pos:9906, size:18290100[0m
+[0;32mI (2389) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (2389) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (2619) avifile: Find a video stream[0m
+[0;32mI (2619) avifile: Find a audio stream[0m
+[0;32mI (2619) avifile: movi pos:9906, size:20391950[0m
+[0;32mI (2679) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (2679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2679) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (2689) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (2719) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (2719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2719) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (2729) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (2759) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (2759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2759) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (2769) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (2799) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (2799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2799) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (2809) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (2839) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (2839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2839) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (2849) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (2879) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (2879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2879) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (2889) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (2919) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (2919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2919) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (2929) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (2959) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (2959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2959) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (2969) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (2999) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (2999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2999) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (3009) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (3039) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (3039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3039) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (3049) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (3079) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (3079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3079) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (3089) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (3119) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (3119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3119) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (3129) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (3159) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (3159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3159) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (3169) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (3199) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (3199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3199) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (3209) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (3239) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (3239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3239) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (3249) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (3279) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (3279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3279) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (3289) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (3319) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (3319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3319) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (3329) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (3359) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (3359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3359) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (3369) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (3399) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (3399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3399) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (3409) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (3439) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (3439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3439) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (3449) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (3479) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (3479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3479) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (3489) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (3519) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (3519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3519) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (3529) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (3559) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (3559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3559) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (3569) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (3599) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (3599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3599) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (3609) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (3639) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (3639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3639) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (3649) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (3679) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (3679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3679) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (3689) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (3719) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (3719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3719) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (3729) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (3759) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (3759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3759) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (3769) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (3799) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (3799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3799) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (3809) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (3839) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (3839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3839) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (3849) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (3879) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (3879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3879) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (3889) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (3919) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (3919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3919) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (3929) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (3959) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (3959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3959) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (3969) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (3999) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (3999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3999) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (4009) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (4039) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (4039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4039) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (4049) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (4079) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (4079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4079) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (4089) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (4119) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (4119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4119) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (4129) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (4159) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (4159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4159) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (4169) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (4199) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (4199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4199) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (4209) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (4239) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (4239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4239) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (4249) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (4279) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (4279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4279) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (4289) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (4319) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (4319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4319) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (4329) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (4359) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (4359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4359) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (4369) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (4399) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (4399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4399) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (4409) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (4439) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (4439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4439) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (4449) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (4479) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (4479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4479) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (4489) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (4519) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (4519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4519) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (4529) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (4559) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (4559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4559) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (4569) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (4599) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (4599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4599) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (4609) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (4639) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (4639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4639) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (4649) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (4679) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (4679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4679) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (4689) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (4719) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (4719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4719) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (4729) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (4759) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (4759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4759) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (4769) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (4799) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (4799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4799) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (4809) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (4839) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (4839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4839) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (4849) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (4879) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (4879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4879) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (4889) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (4919) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (4919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4919) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (4929) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (4959) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (4959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4959) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (4969) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (4999) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (4999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (4999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (4999) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (5009) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (5039) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (5039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5039) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (5049) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (5079) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (5079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5079) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (5089) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (5119) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (5119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5119) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (5129) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (5159) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (5159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5159) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (5169) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (5199) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (5199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5199) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (5209) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (5239) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (5239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5239) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (5249) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (5279) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (5279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5279) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (5289) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (5319) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (5319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5319) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (5329) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (5359) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (5359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5359) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (5369) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (5399) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (5399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5399) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (5409) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (5439) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (5439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5439) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (5449) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (5479) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (5479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5479) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (5489) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (5519) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (5519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5519) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (5529) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (5559) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (5559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5559) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (5569) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (5599) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (5599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5599) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (5609) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (5639) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (5639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5639) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (5649) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (5679) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (5679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5679) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (5689) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (5719) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (5719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5719) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (5729) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (5759) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (5759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5759) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (5769) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (5799) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (5799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5799) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (5809) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (5839) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (5839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5839) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (5849) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (5879) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (5879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5879) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (5889) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (5919) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (5919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5919) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (5929) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (5959) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (5959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5959) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (5969) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (5999) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (5999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (5999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (5999) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (6009) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (6039) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (6039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6039) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (6049) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (6079) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (6079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6079) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (6089) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (6119) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (6119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6119) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (6129) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (6159) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (6159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6159) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (6169) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (6199) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (6199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6199) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (6209) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (6239) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (6239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6239) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (6249) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (6279) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (6279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6279) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (6289) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (6319) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (6319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6319) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (6329) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (6359) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (6359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6359) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (6369) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (6399) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (6399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6399) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (6409) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (6439) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (6439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6439) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (6449) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (6479) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (6479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6479) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (6489) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (6519) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (6519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6519) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (6529) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (6559) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (6559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6559) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (6569) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (6599) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (6599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6599) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (6609) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (6639) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (6639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6639) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (6649) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (6679) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (6679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6679) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (6689) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (6719) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (6719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6719) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (6729) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (6759) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (6759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6759) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (6769) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (6799) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (6799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6799) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (6809) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (6839) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (6839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6839) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (6849) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (6879) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (6879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6879) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (6889) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (6919) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (6919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6919) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (6929) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (6959) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (6959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6959) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (6969) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (6999) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (6999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (6999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (6999) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (7009) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (7039) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (7039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7039) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (7049) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (7079) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (7079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7079) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (7089) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (7119) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (7119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7119) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (7129) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (7159) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (7159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7159) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (7169) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (7199) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (7199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7199) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (7209) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (7239) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (7239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7239) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (7249) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (7279) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (7279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7279) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (7289) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (7319) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (7319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7319) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (7329) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (7359) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (7359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7359) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (7369) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (7399) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (7399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7399) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (7409) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (7439) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (7439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7439) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (7449) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (7479) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (7479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7479) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (7489) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (7519) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (7519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7519) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (7529) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (7559) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (7559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7559) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (7569) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (7599) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (7599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7599) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (7609) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (7639) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (7639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7639) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (7649) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (7679) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (7679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7679) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (7689) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (7719) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (7719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7719) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (7729) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (7759) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (7759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7759) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (7769) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (7799) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (7799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7799) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (7809) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (7839) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (7839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7839) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (7849) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (7879) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (7879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7879) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (7889) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (7919) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (7919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7919) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (7929) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (7959) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (7959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7959) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (7969) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (7999) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (7999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (7999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (7999) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (8009) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (8039) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (8039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8039) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (8049) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (8079) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (8079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8079) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (8089) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (8119) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (8119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8119) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (8129) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (8159) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (8159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8159) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (8169) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (8199) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (8199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8199) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (8209) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (8239) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (8239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8239) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (8249) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (8279) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (8279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8279) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (8289) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (8319) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (8319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8319) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (8329) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (8359) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (8359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8359) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (8369) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (8399) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (8399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8399) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (8409) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (8439) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (8439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8439) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (8449) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (8479) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (8479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8479) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (8489) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (8519) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (8519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8519) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (8529) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (8559) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (8559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8559) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (8569) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (8599) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (8599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8599) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (8609) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (8639) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (8639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8639) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (8649) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (8679) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (8679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8679) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (8689) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (8719) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (8719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8719) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (8729) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (8759) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (8759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8759) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (8769) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (8799) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (8799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8799) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (8809) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (8839) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (8839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8839) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (8849) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (8879) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (8879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8879) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (8889) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (8919) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (8919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8919) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (8929) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (8959) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (8959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8959) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (8969) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (8999) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (8999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (8999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (8999) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (9009) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (9039) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (9039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9039) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (9049) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (9079) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (9079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9079) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (9089) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (9119) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (9119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9119) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (9129) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (9159) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (9159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9159) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (9169) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (9199) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (9199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9199) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (9209) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (9239) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (9239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9239) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (9249) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (9279) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (9279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9279) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (9289) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (9319) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (9319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9319) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (9329) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (9359) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (9359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9359) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (9369) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (9399) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (9399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9399) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (9409) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (9439) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (9439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9439) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (9449) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (9479) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (9479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9479) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (9489) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (9519) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (9519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9519) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (9529) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (9559) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (9559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9559) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (9569) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (9599) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (9599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9599) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (9609) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (9639) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (9639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9639) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (9649) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (9679) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (9679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9679) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (9689) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (9719) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (9719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9719) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (9729) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (9759) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (9759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9759) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (9769) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (9799) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (9799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9799) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (9809) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (9839) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (9839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9839) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (9849) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (9879) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (9879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9879) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (9889) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (9919) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (9919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9919) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (9929) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (9959) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (9959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9959) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (9969) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (9999) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (9999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (9999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (9999) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (10009) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (10039) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (10039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10039) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (10049) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (10079) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (10079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10079) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (10089) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (10119) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (10119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10119) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (10129) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (10159) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (10159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10159) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (10169) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (10199) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (10199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10199) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (10209) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (10239) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (10239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10239) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (10249) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (10279) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (10279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10279) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (10289) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (10319) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (10319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10319) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (10329) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (10359) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (10359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10359) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (10369) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (10399) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (10399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10399) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (10409) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (10439) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (10439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10439) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (10449) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (10479) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (10479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10479) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (10489) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (10519) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (10519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10519) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (10529) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (10559) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (10559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10559) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (10569) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (10599) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (10599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10599) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (10609) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (10639) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (10639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10639) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (10649) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (10679) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (10679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10679) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (10689) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (10719) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (10719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10719) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (10729) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (10759) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (10759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10759) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (10769) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (10799) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (10799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10799) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (10809) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (10839) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (10839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10839) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (10849) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (10879) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (10879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10879) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (10889) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (10919) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (10919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10919) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (10929) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (10959) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (10959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10959) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (10969) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (10999) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (10999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (10999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (10999) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (11009) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (11039) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (11039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11039) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (11049) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (11079) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (11079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11079) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (11089) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (11119) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (11119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11119) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (11129) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (11159) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (11159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11159) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (11169) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (11199) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (11199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11199) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (11209) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (11239) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (11239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11239) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (11249) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (11279) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (11279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11279) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (11289) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (11319) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (11319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11319) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (11329) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (11359) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (11359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11359) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (11369) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (11399) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (11399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11399) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (11409) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (11439) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (11439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11439) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (11449) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (11479) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (11479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11479) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (11489) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (11519) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (11519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11519) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (11529) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (11559) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (11559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11559) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (11569) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (11599) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (11599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11599) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (11609) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (11639) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (11639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11639) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (11649) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (11679) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (11679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11679) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (11689) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (11719) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (11719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11719) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (11729) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (11759) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (11759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11759) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (11769) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (11799) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (11799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11799) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (11809) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (11839) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (11839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11839) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (11849) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (11879) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (11879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11879) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (11889) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (11919) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (11919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11919) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (11929) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (11959) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (11959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11959) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (11969) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (11999) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (11999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (11999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (11999) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (12009) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (12039) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (12039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12039) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (12049) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (12079) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (12079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12079) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (12089) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (12119) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (12119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12119) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (12129) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (12159) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (12159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12159) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (12169) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (12199) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (12199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12199) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (12209) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (12239) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (12239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12239) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (12249) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (12279) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (12279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12279) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (12289) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (12319) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (12319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12319) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (12329) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (12359) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (12359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12359) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (12369) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (12399) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (12399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12399) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (12409) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (12439) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (12439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12439) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (12449) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (12479) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (12479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12479) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (12489) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (12519) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (12519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12519) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (12529) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (12559) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (12559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12559) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (12569) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (12599) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (12599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12599) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (12609) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (12639) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (12639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12639) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (12649) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (12679) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (12679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12679) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (12689) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (12719) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (12719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12719) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (12729) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (12759) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (12759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12759) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (12769) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (12799) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (12799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12799) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (12809) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (12839) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (12839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12839) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (12849) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (12879) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (12879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12879) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (12889) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (12919) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (12919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12919) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (12929) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (12959) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (12959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12959) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (12969) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (12999) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (12999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (12999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (12999) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (13009) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (13039) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (13039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13039) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (13049) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (13079) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (13079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13079) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (13089) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (13119) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (13119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13119) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (13129) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (13159) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (13159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13159) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (13169) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (13199) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (13199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13199) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (13209) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (13239) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (13239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13239) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (13249) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (13279) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (13279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13279) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (13289) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (13319) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (13319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13319) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (13329) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (13359) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (13359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13359) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (13369) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (13399) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (13399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13399) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (13409) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (13439) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (13439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13439) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (13449) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (13479) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (13479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13479) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (13489) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (13519) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (13519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13519) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (13529) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (13559) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (13559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13559) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (13569) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (13599) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (13599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13599) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (13609) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (13639) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (13639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13639) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (13649) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (13679) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (13679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13679) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (13689) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (13719) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (13719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13719) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (13729) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (13759) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (13759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13759) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (13769) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (13799) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (13799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13799) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (13809) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (13839) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (13839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13839) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (13849) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (13879) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (13879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13879) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (13889) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (13919) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (13919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13919) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (13929) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (13959) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (13959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13959) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (13969) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (13999) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (13999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (13999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (13999) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (14009) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (14039) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (14039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14039) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (14049) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (14079) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (14079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14079) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (14089) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (14119) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (14119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14119) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (14129) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (14159) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (14159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14159) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (14169) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (14199) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (14199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14199) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (14209) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (14239) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (14239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14239) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (14249) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (14279) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (14279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14279) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (14289) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (14319) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (14319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14319) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (14329) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (14359) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (14359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14359) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (14369) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (14399) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (14399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14399) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (14409) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (14439) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (14439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14439) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (14449) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (14479) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (14479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14479) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (14489) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (14519) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (14519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14519) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (14529) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (14559) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (14559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14559) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (14569) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (14599) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (14599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14599) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (14609) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (14639) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (14639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14639) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (14649) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (14679) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (14679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14679) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (14689) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (14719) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (14719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14719) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (14729) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (14759) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (14759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14759) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (14769) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (14799) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (14799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14799) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (14809) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (14839) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (14839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14839) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (14849) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (14879) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (14879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14879) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (14889) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (14919) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (14919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14919) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (14929) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (14959) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (14959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14959) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (14969) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (14999) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (14999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (14999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (14999) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (15009) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (15039) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (15039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15039) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (15049) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (15079) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (15079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15079) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (15089) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (15119) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (15119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15119) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (15129) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (15159) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (15159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15159) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (15169) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (15199) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (15199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15199) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (15209) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (15239) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (15239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15239) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (15249) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (15279) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (15279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15279) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (15289) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (15319) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (15319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15319) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (15329) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (15359) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (15359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15359) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (15369) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (15399) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (15399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15399) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (15409) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (15439) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (15439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15439) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (15449) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (15479) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (15479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15479) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (15489) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (15519) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (15519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15519) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (15529) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (15559) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (15559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15559) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (15569) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (15599) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (15599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15599) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (15609) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (15639) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (15639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15639) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (15649) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (15679) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (15679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15679) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (15689) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (15719) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (15719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15719) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (15729) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (15759) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (15759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15759) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (15769) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (15799) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (15799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15799) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (15809) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (15839) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (15839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15839) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (15849) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (15879) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (15879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15879) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (15889) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (15919) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (15919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15919) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (15929) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (15959) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (15959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15959) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (15969) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (15999) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (15999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (15999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (15999) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (16009) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (16039) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (16039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16039) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (16049) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (16079) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (16079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16079) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (16089) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (16119) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (16119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16119) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (16129) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (16159) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (16159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16159) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (16169) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (16199) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (16199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16199) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (16209) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (16239) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (16239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16239) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (16249) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (16279) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (16279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16279) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (16289) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (16319) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (16319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16319) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (16329) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (16359) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (16359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16359) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (16369) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (16399) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (16399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16399) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (16409) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (16439) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (16439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16439) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (16449) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (16479) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (16479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16479) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (16489) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (16519) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (16519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16519) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (16529) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (16559) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (16559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16559) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (16569) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (16599) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (16599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16599) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (16609) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (16639) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (16639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16639) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (16649) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (16679) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (16679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16679) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (16689) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (16719) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (16719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16719) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (16729) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (16759) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (16759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16759) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (16769) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (16799) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (16799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16799) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (16809) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (16839) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (16839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16839) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (16849) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (16879) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (16879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16879) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (16889) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (16919) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (16919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16919) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (16929) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (16959) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (16959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16959) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (16969) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (16999) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (16999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (16999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (16999) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (17009) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (17039) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (17039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17039) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (17049) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (17079) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (17079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17079) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (17089) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (17119) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (17119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17119) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (17129) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (17159) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (17159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17159) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (17169) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (17199) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (17199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17199) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (17209) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (17239) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (17239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17239) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (17249) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (17279) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (17279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17279) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (17289) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (17319) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (17319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17319) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (17329) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (17359) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (17359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17359) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (17369) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (17399) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (17399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17399) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (17409) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (17439) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (17439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17439) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (17449) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (17479) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (17479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17479) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (17489) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (17519) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (17519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17519) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (17529) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (17559) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (17559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17559) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (17569) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (17599) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (17599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17599) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (17609) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (17639) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (17639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17639) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (17649) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (17679) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (17679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17679) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (17689) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (17719) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (17719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17719) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (17729) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (17759) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (17759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17759) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17759) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (17769) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (17799) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (17799) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17799) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17799) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (17809) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (17839) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (17839) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17839) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17839) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (17849) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (17879) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (17879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17879) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (17889) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (17919) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (17919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17919) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (17929) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (17959) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (17959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17959) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (17969) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (17999) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (17999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (17999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (17999) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (18009) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (18039) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (18039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18039) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (18049) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (18079) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (18079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18079) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (18089) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (18119) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (18119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18119) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (18129) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (18159) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (18159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18159) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (18169) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (18199) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (18199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18199) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (18209) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (18239) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (18239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18239) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (18249) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (18279) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (18279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18279) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (18289) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (18319) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (18319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18319) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (18329) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (18359) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (18359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18359) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (18369) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (18399) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (18399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18399) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (18409) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (18439) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (18439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18439) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (18449) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (18479) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (18479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18479) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (18489) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (18519) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (18519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18519) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (18529) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (18559) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (18559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18559) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18559) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (18569) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (18599) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (18599) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18599) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18599) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (18609) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (18639) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (18639) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18639) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18639) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (18649) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (18679) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (18679) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18679) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18679) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (18689) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (18719) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (18719) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18719) vfs_fat: open: no free file descriptors[0m
+[1;31mE (18719) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (18729) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (18759) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (18759) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (18759) vfs_fat: open: no free file descriptors[0m
+[0;32mI (864) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (864) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (864) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (874) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (924) bsp: SD card mounted successfully[0m
+[0;32mI (924) bsp: ==== SD Card Info ====[0m
+[0;32mI (924) bsp: Name: SD32G[0m
+[0;32mI (924) bsp: Capacity: 30436 MB[0m
+[0;32mI (924) bsp: Speed: 40000 kHz[0m
+[0;32mI (934) bsp: Type: SDHC/SDXC[0m
+[0;32mI (934) bsp: ==== Listing files under: /sdcard/stv ====[0m
+[0;32mI (934) bsp: [FILE] CDLOVE3.AVI (30499948 bytes)[0m
+[0;32mI (944) bsp: [FILE] CDLOVE1.AVI (25605576 bytes)[0m
+[0;32mI (944) bsp: [FILE] CDLOVE2.AVI (36760142 bytes)[0m
+[0;32mI (954) bsp: [FILE] CDLOVE4.AVI (18352282 bytes)[0m
+[0;32mI (954) bsp: [FILE] CDLOVE5.AVI (20459844 bytes)[0m
+[0;32mI (964) bsp: [FILE] CDLOVE6.AVI (73066506 bytes)[0m
+[0;32mI (964) bsp: [FILE] CDLOVE7.AVI (128649146 bytes)[0m
+[0;32mI (964) bsp: [FILE] CDLOVE8.AVI (64718216 bytes)[0m
+[0;32mI (974) bsp: ==== End of list ====[0m
+[0;32mI (984) decode: playlist built: 8 files[0m
+[0;32mI (984) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (984) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (984) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (994) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (994) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (994) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1004) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1004) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1014) main: playlist count=8[0m
+[0;32mI (1014) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1054) decode: blit_task start (Core=0)[0m
+[0;32mI (1064) decode: playlist built: 8 files[0m
+[0;32mI (1064) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (1064) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (1064) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (1064) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (1074) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1074) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1074) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1084) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1084) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1094) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1104) main_task: Returned from app_main()[0m
+[0;32mI (1104) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1114) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (1114) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1364) avifile: Find a video stream[0m
+[0;32mI (1364) avifile: Find a audio stream[0m
+[0;32mI (1364) avifile: movi pos:9906, size:30411670[0m
+[0;32mI (1189) main: playlist count=8[0m
+[0;32mI (1189) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1229) decode: blit_task start (Core=0)[0m
+[0;32mI (1239) decode: playlist built: 8 files[0m
+[0;32mI (1239) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (1239) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (1239) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (1239) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (1249) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1249) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1259) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1259) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1259) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[1;31mE (1269) gpio: gpio_install_isr_service(502): GPIO isr service already installed[0m
+[0;32mI (1279) main_task: Returned from app_main()[0m
+[0;32mI (1279) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1289) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (1289) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1539) avifile: Find a video stream[0m
+[0;32mI (1539) avifile: Find a audio stream[0m
+[0;32mI (1539) avifile: movi pos:9906, size:30411670[0m
+[0;32mI (1599) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (1599) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1849) avifile: Find a video stream[0m
+[0;32mI (1849) avifile: Find a audio stream[0m
+[0;32mI (1849) avifile: movi pos:9906, size:25530338[0m
+[0;32mI (1949) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (1949) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (2189) avifile: Find a video stream[0m
+[0;32mI (2189) avifile: movi pos:5678, size:36692540[0m
+[0;32mI (2299) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (2299) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (2529) avifile: Find a video stream[0m
+[0;32mI (2529) avifile: Find a audio stream[0m
+[0;32mI (2529) avifile: movi pos:9906, size:18290100[0m
+[0;32mI (2589) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (2589) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (2819) avifile: Find a video stream[0m
+[0;32mI (2819) avifile: Find a audio stream[0m
+[0;32mI (2819) avifile: movi pos:9906, size:20391950[0m
+[0;32mI (2879) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (2879) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2879) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2879) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (2889) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (2919) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (2919) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2919) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2919) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (2929) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (2959) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (2959) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2959) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2959) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (2969) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (2999) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (2999) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (2999) vfs_fat: open: no free file descriptors[0m
+[1;31mE (2999) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (3009) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (3039) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (3039) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3039) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3039) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (3049) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (3079) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (3079) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3079) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3079) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (3089) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (3119) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (3119) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3119) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3119) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (3129) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (3159) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (3159) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3159) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3159) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (3169) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (3199) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (3199) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3199) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3199) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (3209) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (3239) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (3239) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3239) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3239) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (3249) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (3279) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (3279) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3279) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3279) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (3289) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (3319) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (3319) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3319) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3319) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (3329) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (3359) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (3359) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3359) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3359) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (3369) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (3399) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (3399) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3399) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3399) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (3409) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (3439) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (3439) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3439) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3439) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (3449) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (3479) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (3479) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3479) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3479) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (3489) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (3519) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (3519) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3519) vfs_fat: open: no free file descriptors[0m
+[1;31mE (3519) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (3529) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (3559) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (3559) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (3559) vfs_fat: open: no free file descriptors[0m
+[1;

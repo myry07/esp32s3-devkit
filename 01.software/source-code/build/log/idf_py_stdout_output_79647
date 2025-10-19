@@ -1,0 +1,1087 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4200ae33
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (170) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (196) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (200) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (204) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (209) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (214) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (228) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (969) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196606/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 180886/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (178) boot: Disabling RNG early entropy source...[0m
+[0;32mI (188) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (189) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (191) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (195) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (199) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (203) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (208) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (213) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (218) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (223) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (227) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (231) esp_psram: Speed: 40MHz[0m
+[0;32mI (234) cpu_start: Multicore app[0m
+[1;31mE (968) esp_psram: SPI SRAM memory test fail. 196608/262144 writes failed, first @ 3C060200[0m
+[1;31mE (968) cpu_start: External RAM failed memory test![0m
+
+abort() was called at PC 0x40375760 on core 0
+
+
+Backtrace: 0x40375e25:0x3fceb220 0x40380bed:0x3fceb240 0x403889e9:0x3fceb260 0x40375760:0x3fceb2d0 0x403ccaa4:0x3fceb340 0x403ccee1:0x3fceb380 0x403c8991:0x3fceb4b0 0x40045c01:0x3fceb570 0x40043ab6:0x3fceb6f0 0x40034c45:0x3fceb710
+
+
+
+
+ELF file SHA256: 
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375d65
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=12368h ( 74600) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022390 vaddr=3fc9ae00 size=03068h ( 12392) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=00025400 vaddr=40374000 size=0ac18h ( 44056) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b430h (242736) map[0m
+[0;32mI (158) esp_image: segment 4: paddr=0006b458 vaddr=4037ec18 size=0c110h ( 49424) load[0m
+[0;32mI (169) esp_image: segment 5: paddr=00077570 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (178) boot

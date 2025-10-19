@@ -1,0 +1,23 @@
+[1/15] Linking C static library esp-idf/rt/librt.a
+[2/15] Linking C static library esp-idf/touch_element/libtouch_element.a
+[3/15] Linking C static library esp-idf/spiffs/libspiffs.a
+[4/15] Linking C static library esp-idf/usb/libusb.a
+[5/15] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[6/15] Linking C static library esp-idf/wifi_provisioning/libwifi_provisioning.a
+[7/15] No install step for 'bootloader'
+[8/15] Completed 'bootloader'
+[9/15] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/source-code.c.obj
+[10/15] Linking C static library esp-idf/main/libmain.a
+[11/15] Generating ld/sections.ld
+[12/15] Building C object CMakeFiles/source-code.elf.dir/project_elf_src_esp32s3.c.obj
+[13/15] Linking CXX executable source-code.elf
+[14/15] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/source-code.bin
+[15/15] cd /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/source-code.bin
+source-code.bin binary size 0x513e0 bytes. Smallest app partition is 0x100000 bytes. 0xaec20 bytes (68%) free.

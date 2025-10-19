@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/CMakeFiles/bootloader
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/CMakeFiles/bootloader.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/CMakeFiles/bootloader-complete.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
