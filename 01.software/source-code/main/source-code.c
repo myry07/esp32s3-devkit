@@ -12,22 +12,28 @@ void app_main(void)
     ESP_LOGI(TAG, "Init LCD + SD...");
     bsp_st7789_init(&lcd);
 
+    bsp_i2s_init();
+
     bsp_init_sdmmc_card();
-    bsp_sdcard_print_info("/sdcard/stv");
+    bsp_sdcard_print_info("/sdcard/test");
 
     // 构建播放列表
-    int n = build_playlist("/sdcard/stv");
-    ESP_LOGI(TAG, "playlist count=%d", n);
+    // int n = build_playlist("/sdcard/test");
+    // ESP_LOGI(TAG, "playlist count=%d", n);
 
     // 初始化 BOOT 按键（下一段）
     init_boot_button();
 
     // 初始化解码/推屏流水线（旋转90°, 背光80%, 右移20px）
-    decode_pipeline_init(&lcd, /*rotation=*/1, /*backlight*/80, /*right_nudge_px*/20);
+    // decode_pipeline_init(&lcd, /*rotation=*/1, /*backlight*/80, /*right_nudge_px*/20);
 
     // 开始播放
-    decode_play_dir("/sdcard/stv");
+    // decode_play_dir("/sdcard/test");
 
-    // 如果要换片源，直接再调一遍：
-    // decode_play_file("/sdcard/stv/b.avi");
+    bsp_i2s_play_wav("/sdcard/test/test.wav");
+
+
+
+
+
 }

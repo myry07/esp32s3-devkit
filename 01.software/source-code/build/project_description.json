@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "source-code",
-    "project_version":    "fcc949d",
+    "project_version":    "76bc3b4-dirty",
     "project_path":       "/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code",
     "idf_path":           "/Users/wangjiaqi/esp/esp-idf",
     "build_dir":          "/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build",

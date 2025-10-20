@@ -4,6 +4,11 @@
 #include "freertos/task.h"
 #include "esp_vfs_fat.h"
 #include "driver/sdmmc_host.h"
+#include "driver/i2s_std.h"
+#include "esp_err.h"
+#include "esp_log.h"
+#include <stdio.h>
+#include "esp_check.h"
 
 #include "dirent.h"
 #include "sys/stat.h"
@@ -13,6 +18,7 @@
 
 static bsp_st7789_t lcd_dev;
 static sdmmc_card_t *card;
+static i2s_chan_handle_t tx_chan = NULL;
 
 // SPI 传输封装
 static void spi_send(const uint8_t *data, size_t len, bool is_cmd)
@@ -40,7 +46,6 @@ static void delay_ms(int ms)
     vTaskDelay(pdMS_TO_TICKS(ms));
 }
 
-
 void bsp_st7789_set_rotation(bsp_st7789_t *lcd, uint8_t rot)
 {
     rot &= 3; // 0..3
@@ -51,26 +56,35 @@ void bsp_st7789_set_rotation(bsp_st7789_t *lcd, uint8_t rot)
 
     // 如果你的模组是 240x240（IC是240x320），用下面这组偏移；
     // 如果是 240x320，offx/offy 都设为 0 即可。
-    switch (rot) {
+    switch (rot)
+    {
     case 0:
-        madctl = 0x00;        // MY=0, MX=0, MV=0
-        offx = 0; offy = 20;  // 竖屏时把 80 像素留给 Y
-        lcd->width = w;  lcd->height = h;
+        madctl = 0x00; // MY=0, MX=0, MV=0
+        offx = 0;
+        offy = 20; // 竖屏时把 80 像素留给 Y
+        lcd->width = w;
+        lcd->height = h;
         break;
     case 1:
-        madctl = 0x60;        // MX=1, MV=1
-        offx = 20; offy = 0;  // 90° 时偏移到 X
-        lcd->width = h;  lcd->height = w; // 交换逻辑宽高
+        madctl = 0x60; // MX=1, MV=1
+        offx = 20;
+        offy = 0; // 90° 时偏移到 X
+        lcd->width = h;
+        lcd->height = w; // 交换逻辑宽高
         break;
     case 2:
-        madctl = 0xC0;        // MY=1, MX=1
-        offx = 0; offy = 20;
-        lcd->width = w;  lcd->height = h;
+        madctl = 0xC0; // MY=1, MX=1
+        offx = 0;
+        offy = 20;
+        lcd->width = w;
+        lcd->height = h;
         break;
     case 3:
-        madctl = 0xA0;        // MY=1, MV=1
-        offx = 20; offy = 0;
-        lcd->width = h;  lcd->height = w;
+        madctl = 0xA0; // MY=1, MV=1
+        offx = 20;
+        offy = 0;
+        lcd->width = h;
+        lcd->height = w;
         break;
     }
 
@@ -82,7 +96,6 @@ void bsp_st7789_set_rotation(bsp_st7789_t *lcd, uint8_t rot)
     lcd->offset_x = offx;
     lcd->offset_y = offy;
 }
-
 
 esp_err_t bsp_st7789_init(bsp_st7789_t *lcd)
 {
@@ -147,7 +160,6 @@ esp_err_t bsp_st7789_init(bsp_st7789_t *lcd)
     ESP_ERROR_CHECK(spi_bus_add_device(BSP_LCD_HOST, &devcfg, &local.spi));
     lcd_dev = local;
     lcd_dev.spi = local.spi;
-    
 
     // ===== 初始化命令 =====
     write_cmd(0x01);
@@ -492,4 +504,60 @@ esp_err_t bsp_sdcard_deinit(void)
         ESP_LOGE(TAG, "Failed to unmount SD card: %s", esp_err_to_name(ret));
     }
     return ret;
+}
+
+/* i2s */
+esp_err_t bsp_i2s_init(void)
+{
+    i2s_chan_config_t chan_cfg = I2S_CHANNEL_DEFAULT_CONFIG(I2S_NUM_0, I2S_ROLE_MASTER);
+    ESP_RETURN_ON_ERROR(i2s_new_channel(&chan_cfg, &tx_chan, NULL), TAG, "create channel failed");
+
+    i2s_std_config_t std_cfg = {
+        .clk_cfg = I2S_STD_CLK_DEFAULT_CONFIG(I2S_SAMPLE_RATE),
+        .slot_cfg = I2S_STD_PHILIPS_SLOT_DEFAULT_CONFIG(I2S_BITS_PER_SAMPLE, I2S_SLOT_MODE_STEREO),
+        .gpio_cfg = {
+            .mclk = I2S_GPIO_UNUSED,
+            .bclk = BSP_I2S_BCK_PIN,
+            .ws = BSP_I2S_WS_PIN,
+            .dout = BSP_I2S_DO_PIN,
+            .din = BSP_I2S_DI_PIN,
+        },
+    };
+
+    ESP_RETURN_ON_ERROR(i2s_channel_init_std_mode(tx_chan, &std_cfg), TAG, "i2s init failed");
+    ESP_RETURN_ON_ERROR(i2s_channel_enable(tx_chan), TAG, "i2s enable failed");
+
+    ESP_LOGI(TAG, "I2S initialized: %d Hz, %d-bit, stereo", I2S_SAMPLE_RATE, I2S_BITS_PER_SAMPLE);
+    return ESP_OK;
+}
+
+esp_err_t bsp_i2s_play_wav(const char *filepath)
+{
+    FILE *fp = fopen(filepath, "rb");
+    if (!fp)
+    {
+        ESP_LOGE(TAG, "Failed to open file: %s", filepath);
+        return ESP_FAIL;
+    }
+
+    // 跳过 WAV 文件头 (44 字节)
+    fseek(fp, 44, SEEK_SET);
+
+    uint8_t buffer[2048];
+    size_t bytes_read = 0;
+    ESP_LOGI(TAG, "Start playing: %s", filepath);
+
+    while ((bytes_read = fread(buffer, 1, sizeof(buffer), fp)) > 0)
+    {
+        size_t bytes_written = 0;
+        i2s_channel_write(tx_chan, buffer, bytes_read, &bytes_written, portMAX_DELAY);
+        if (bytes_written != bytes_read)
+        {
+            ESP_LOGW(TAG, "Partial write: %u/%u bytes", bytes_written, bytes_read);
+        }
+    }
+
+    fclose(fp);
+    ESP_LOGI(TAG, "Playback finished.");
+    return ESP_OK;
 }

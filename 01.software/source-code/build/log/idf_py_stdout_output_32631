@@ -1,0 +1,76 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cd /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[2/13] No install step for 'bootloader'
+[3/13] Completed 'bootloader'
+[4/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/source-code.c.obj
+[5/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/decode.c.obj
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/main/decode.c:61:13: warning: 'button_monitor_task' defined but not used [-Wunused-function]
+   61 | static void button_monitor_task(void *arg)
+      |             ^~~~~~~~~~~~~~~~~~~
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/main/decode.c:39:28: warning: 's_avi' defined but not used [-Wunused-variable]
+   39 | static avi_player_handle_t s_avi = NULL; // 播放器句柄
+      |                            ^~~~~
+[6/13] Building C object esp-idf/bsp/CMakeFiles/__idf_bsp.dir/bsp.c.obj
+/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/components/bsp/bsp.c:38:13: warning: 'delay_ms' defined but not used [-Wunused-function]
+   38 | static void delay_ms(int ms)
+      |             ^~~~~~~~
+[7/13] Linking C static library esp-idf/bsp/libbsp.a
+[8/13] Linking C static library esp-idf/main/libmain.a
+[9/13] Generating ld/sections.ld
+[10/13] Linking CXX executable source-code.elf
+[11/13] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/source-code.bin
+[12/13] cd /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/esp-idf/esptool_py && /Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python /Users/wangjiaqi/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/partition_table/partition-table.bin /Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build/source-code.bin
+source-code.bin binary size 0x675e0 bytes. Smallest app partition is 0x100000 bytes. 0x98a20 bytes (60%) free.
+[12/13] cd /Users/wangjiaqi/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/wangjiaqi/esp/esp-idf -D "SERIAL_TOOL=/Users/wangjiaqi/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/Users/wangjiaqi/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/wangjiaqi/Documents/Github/esp32s3-simple-mjpeg-player/01.software/source-code/build -P /Users/wangjiaqi/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbserial-10 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 source-code.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbserial-10
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: 80:b5:4e:ce:76:f4
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00077fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 21024 bytes to 13389...
+Writing at 0x00000000... (100 %)
+Wrote 21024 bytes (13389 compressed) at 0x00000000 in 0.5 seconds (effective 354.1 kbit/s)...
+Hash of data verified.
+Compressed 423392 bytes to 214798...
+Writing at 0x00010000... (7 %)
+Writing at 0x0001c8af... (14 %)
+Writing at 0x000272f1... (21 %)
+Writing at 0x0003060c... (28 %)
+Writing at 0x0003683b... (35 %)
+Writing at 0x0003cc11... (42 %)
+Writing at 0x00042d43... (50 %)
+Writing at 0x00048da2... (57 %)
+Writing at 0x0004eaca... (64 %)
+Writing at 0x00058c28... (71 %)
+Writing at 0x0006270a... (78 %)
+Writing at 0x000699eb... (85 %)
+Writing at 0x0006fd02... (92 %)
+Writing at 0x000769c0... (100 %)
+Wrote 423392 bytes (214798 compressed) at 0x00010000 in 5.6 seconds (effective 607.8 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 630.5 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

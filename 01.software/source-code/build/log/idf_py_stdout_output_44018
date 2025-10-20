@@ -1,0 +1,498 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490d5
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=122d8h ( 74456) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=00022300 vaddr=3fc9ae00 size=03084h ( 12420) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0002538c vaddr=40374000 size=0ac8ch ( 44172) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b410h (242704) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0006b438 vaddr=4037ec8c size=0c164h ( 49508) load[0m
+[0;32mI (170) esp_image: segment 5: paddr=000775a4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) octal_psram: ECC is enabled[0m
+[0;32mI (189) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (190) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (195) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (199) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (207) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (212) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (216) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (221) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (226) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (231) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (234) esp_psram: Speed: 40MHz[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) app_init: Application information:[0m
+[0;32mI (253) app_init: Project name:     source-code[0m
+[0;32mI (256) app_init: App version:      76bc3b4-dirty[0m
+[0;32mI (261) app_init: Compile time:     Oct 19 2025 21:44:28[0m
+[0;32mI (266) app_init: ELF file SHA256:  3c3a46be7...[0m
+[0;32mI (270) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (275) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (278) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (282) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (293) heap_init: At 3FC9E8C8 len 0004AE48 (299 KiB): RAM[0m
+[0;32mI (298) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (303) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (308) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (314) esp_psram: Adding pool of 7680K of PSRAM memory to heap allocator[0m
+[0;32mI (321) spi_flash: detected chip: generic[0m
+[0;32mI (324) spi_flash: flash io: dio[0m
+[0;32mI (327) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (340) main_task: Started on CPU0[0m
+[0;32mI (350) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (350) main_task: Calling app_main()[0m
+[0;32mI (350) main: Init LCD + SD...[0m
+[0;32mI (360) bsp: ST7789 init start...[0m
+[0;32mI (360) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (370) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (840) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (840) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (840) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (850) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (900) bsp: SD card mounted successfully[0m
+[0;32mI (900) bsp: ==== SD Card Info ====[0m
+[0;32mI (900) bsp: Name: SD32G[0m
+[0;32mI (900) bsp: Capacity: 30436 MB[0m
+[0;32mI (900) bsp: Speed: 40000 kHz[0m
+[0;32mI (910) bsp: Type: SDHC/SDXC[0m
+[0;32mI (910) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (920) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (920) bsp: ==== End of list ====[0m
+[0;32mI (920) decode: playlist built: 1 files[0m
+[0;32mI (920) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (930) main: playlist count=1[0m
+[0;32mI (930) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (970) decode: blit_task start (Core=0)[0m
+[0;32mI (980) decode: playlist built: 1 files[0m
+[0;32mI (980) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (980) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (980) main_task: Returned from app_main()[0m
+[0;32mI (980) decode: avi_play_task start (Core=1)[0m
+[0;32mI (990) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (990) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1230) avifile: Find a video stream[0m
+[0;32mI (1230) avifile: Find a audio stream[0m
+[0;32mI (1230) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (861) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (861) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (861) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (871) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1051) bsp: SD card mounted successfully[0m
+[0;32mI (1051) bsp: ==== SD Card Info ====[0m
+[0;32mI (1051) bsp: Name: SD32G[0m
+[0;32mI (1051) bsp: Capacity: 30436 MB[0m
+[0;32mI (1051) bsp: Speed: 40000 kHz[0m
+[0;32mI (1061) bsp: Type: SDHC/SDXC[0m
+[0;32mI (1061) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (1071) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (1071) bsp: ==== End of list ====[0m
+[0;32mI (1071) decode: playlist built: 1 files[0m
+[0;32mI (1071) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1081) main: playlist count=1[0m
+[0;32mI (1081) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1121) decode: blit_task start (Core=0)[0m
+[0;32mI (1131) decode: playlist built: 1 files[0m
+[0;32mI (1131) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1131) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1131) main_task: Returned from app_main()[0m
+[0;32mI (1131) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1141) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1151) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1381) avifile: Find a video stream[0m
+[0;32mI (1381) avifile: Find a audio stream[0m
+[0;32mI (1381) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (865) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (865) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (865) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (875) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) bsp: SD card mounted successfully[0m
+[0;32mI (925) bsp: ==== SD Card Info ====[0m
+[0;32mI (925) bsp: Name: SD32G[0m
+[0;32mI (925) bsp: Capacity: 30436 MB[0m
+[0;32mI (925) bsp: Speed: 40000 kHz[0m
+[0;32mI (935) bsp: Type: SDHC/SDXC[0m
+[0;32mI (935) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (945) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (945) bsp: ==== End of list ====[0m
+[0;32mI (945) decode: playlist built: 1 files[0m
+[0;32mI (945) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (955) main: playlist count=1[0m
+[0;32mI (955) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (995) decode: blit_task start (Core=0)[0m
+[0;32mI (1005) decode: playlist built: 1 files[0m
+[0;32mI (1005) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1005) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1005) main_task: Returned from app_main()[0m
+[0;32mI (1005) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1015) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1025) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1255) avifile: Find a video stream[0m
+[0;32mI (1255) avifile: Find a audio stream[0m
+[0;32mI (1255) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (865) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (865) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (865) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (875) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) bsp: SD card mounted successfully[0m
+[0;32mI (925) bsp: ==== SD Card Info ====[0m
+[0;32mI (925) bsp: Name: SD32G[0m
+[0;32mI (925) bsp: Capacity: 30436 MB[0m
+[0;32mI (925) bsp: Speed: 40000 kHz[0m
+[0;32mI (935) bsp: Type: SDHC/SDXC[0m
+[0;32mI (935) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (945) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (945) bsp: ==== End of list ====[0m
+[0;32mI (945) decode: playlist built: 1 files[0m
+[0;32mI (945) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (955) main: playlist count=1[0m
+[0;32mI (955) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (995) decode: blit_task start (Core=0)[0m
+[0;32mI (1005) decode: playlist built: 1 files[0m
+[0;32mI (1005) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1005) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1005) main_task: Returned from app_main()[0m
+[0;32mI (1005) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1015) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1015) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1255) avifile: Find a video stream[0m
+[0;32mI (1255) avifile: Find a audio stream[0m
+[0;32mI (1255) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (865) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (865) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (865) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (875) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) bsp: SD card mounted successfully[0m
+[0;32mI (925) bsp: ==== SD Card Info ====[0m
+[0;32mI (925) bsp: Name: SD32G[0m
+[0;32mI (925) bsp: Capacity: 30436 MB[0m
+[0;32mI (925) bsp: Speed: 40000 kHz[0m
+[0;32mI (935) bsp: Type: SDHC/SDXC[0m
+[0;32mI (935) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (935) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (945) bsp: ==== End of list ====[0m
+[0;32mI (945) decode: playlist built: 1 files[0m
+[0;32mI (945) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (955) main: playlist count=1[0m
+[0;32mI (955) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (995) decode: blit_task start (Core=0)[0m
+[0;32mI (995) decode: playlist built: 1 files[0m
+[0;32mI (1005) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1005) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1005) main_task: Returned from app_main()[0m
+[0;32mI (1005) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1015) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1015) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1255) avifile: Find a video stream[0m
+[0;32mI (1255) avifile: Find a audio stream[0m
+[0;32mI (1255) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (49855) avi player: play end[0m
+[0;32mI (51325) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51325) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (51555) avifile: Find a video stream[0m
+[0;32mI (51555) avifile: Find a audio stream[0m
+[0;32mI (51555) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (861) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (861) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (861) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (871) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1051) bsp: SD card mounted successfully[0m
+[0;32mI (1051) bsp: ==== SD Card Info ====[0m
+[0;32mI (1051) bsp: Name: SD32G[0m
+[0;32mI (1051) bsp: Capacity: 30436 MB[0m
+[0;32mI (1051) bsp: Speed: 40000 kHz[0m
+[0;32mI (1061) bsp: Type: SDHC/SDXC[0m
+[0;32mI (1061) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (1071) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (1071) bsp: ==== End of list ====[0m
+[0;32mI (1071) decode: playlist built: 1 files[0m
+[0;32mI (1071) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1081) main: playlist count=1[0m
+[0;32mI (1081) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1121) decode: blit_task start (Core=0)[0m
+[0;32mI (1131) decode: playlist built: 1 files[0m
+[0;32mI (1131) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1131) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1131) main_task: Returned from app_main()[0m
+[0;32mI (1131) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1141) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1151) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1381) avifile: Find a video stream[0m
+[0;32mI (1381) avifile: Find a audio stream[0m
+[0;32mI (1381) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (865) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (865) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (865) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (875) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (925) bsp: SD card mounted successfully[0m
+[0;32mI (925) bsp: ==== SD Card Info ====[0m
+[0;32mI (925) bsp: Name: SD32G[0m
+[0;32mI (925) bsp: Capacity: 30436 MB[0m
+[0;32mI (925) bsp: Speed: 40000 kHz[0m
+[0;32mI (935) bsp: Type: SDHC/SDXC[0m
+[0;32mI (935) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (945) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (945) bsp: ==== End of list ====[0m
+[0;32mI (945) decode: playlist built: 1 files[0m
+[0;32mI (945) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (955) main: playlist count=1[0m
+[0;32mI (955) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (995) decode: blit_task start (Core=0)[0m
+[0;32mI (1005) decode: playlist built: 1 files[0m
+[0;32mI (1005) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1005) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1005) main_task: Returned from app_main()[0m
+[0;32mI (1005) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1015) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1025) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1255) avifile: Find a video stream[0m
+[0;32mI (1255) avifile: Find a audio stream[0m
+[0;32mI (1255) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (49855) avi player: play end[0m
+[0;32mI (51325) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51325) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (51555) avifile: Find a video stream[0m
+[0;32mI (51555) avifile: Find a audio stream[0m
+[0;32mI (51555) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (100145) avi player: play end[0m
+[0;32mI (101625) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (101625) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (101855) avifile: Find a video stream[0m
+[0;32mI (101855) avifile: Find a audio stream[0m
+[0;32mI (101855) avifile: movi pos:9906, size:20514770[0m
+[0;32mI (1090) bsp: SD card mounted successfully[0m
+[0;32mI (1090) bsp: ==== SD Card Info ====[0m
+[0;32mI (1090) bsp: Name: SD32G[0m
+[0;32mI (1090) bsp: Capacity: 30436 MB[0m
+[0;32mI (1090) bsp: Speed: 40000 kHz[0m
+[0;32mI (1100) bsp: Type: SDHC/SDXC[0m
+[0;32mI (1100) bsp: ==== Listing files under: /sdcard/test ====[0m
+[0;32mI (1110) bsp: [FILE] A.AVI (20560504 bytes)[0m
+[0;32mI (1110) bsp: ==== End of list ====[0m
+[0;32mI (1110) decode: playlist built: 1 files[0m
+[0;32mI (1110) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1120) main: playlist count=1[0m
+[0;32mI (1120) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1160) decode: blit_task start (Core=0)[0m
+[0;32mI (1170) decode: playlist built: 1 files[0m
+[0;32mI (1170) decode: [00] /sdcard/test/A.AVI[0m
+[0;32mI (1170) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1170) main_task: Returned from app_main()[0m
+[0;32mI (1170) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1180) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (1190) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1420) avifile: Find a video stream[0m
+[0;32mI (1420) avifile: Find a audio stream[0m
+[0;32mI (1420) avifile: movi pos:9906, size:20514770[0m
+[1;31mE (48900) sdmmc_common: sdmmc_wait_for_idle: sdmmc_send_cmd_send_status returned 0x107[0m
+[1;31mE (48900) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_wait_for_idle timeout[0m
+[1;31mE (48900) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (48940) decode: jpeg decode failed[0m
+[1;31mE (48960) decode: jpeg decode failed[0m
+[1;31mE (48990) decode: jpeg decode failed[0m
+[1;31mE (49020) decode: jpeg decode failed[0m
+[1;31mE (49020) avi player: unknown frame b33fffff[0m
+[1;31mE (49020) avi player: AVI Perse failed[0m
+[0;32mI (50390) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50390) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50390) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50400) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50400) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50410) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50410) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50420) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50420) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50430) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50440) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50440) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50450) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50450) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50460) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50460) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50470) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50470) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50480) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50480) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50490) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50500) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50500) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50510) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50510) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50520) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50520) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50530) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50540) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50540) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50540) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50550) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50550) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50560) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50570) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50570) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50580) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50580) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50590) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50600) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50600) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50610) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50610) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50620) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50620) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50630) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50630) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50640) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50640) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50650) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50650) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50660) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50670) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50670) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50680) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50680) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50690) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50700) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50700) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50710) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50710) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50720) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50720) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50730) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50730) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50740) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50740) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50750) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50750) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50760) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50770) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50770) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50780) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50780) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50790) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50790) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50800) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50800) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50810) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50810) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50820) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50830) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50830) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50840) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50840) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50850) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50850) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50860) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50870) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50870) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50880) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50880) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50890) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50890) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50900) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50900) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50910) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50910) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50920) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50930) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50930) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50940) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50940) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50950) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50950) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50960) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (50970) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (50970) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (50970) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (50980) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (50980) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (50990) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51000) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51000) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51010) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51010) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51020) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51030) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51030) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51040) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51040) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51050) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51050) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51060) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51060) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51070) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51070) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51080) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51080) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51090) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51100) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51100) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51110) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51110) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51120) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51130) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51130) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51140) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51140) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51150) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51150) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51160) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51160) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51170) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51170) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51180) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51180) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51190) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51200) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51200) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51210) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51210) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51220) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51220) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51230) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51230) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51240) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51240) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51250) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51260) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51260) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51270) decode: Failed to play /sdcard/test/A.AVI[0m
+[0;32mI (51270) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (51280) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (51280) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (51290) diskio_sdmmc: sdmmc_read_blocks failed (0x107)[0m
+[1;31mE (51300) avi player: Cannot open /sdcard/test/A.AVI[0m
+[1;31mE (51300) decode: Failed to play /sdcard/test/A.AVI[0m
+[1;31mE (52310) avi player: AVI player deinit timeout[0m
+[0;32mI (52310) decode: play file: /sdcard/test/A.AVI (index=1/1)[0m
+[0;32mI (52310) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (52310) sdmmc_cmd: sdmmc_read_sectors_dma: sdmmc_send_cmd returned 0x107, failed to get status (0x107)[0m
+[1;31mE (52320)

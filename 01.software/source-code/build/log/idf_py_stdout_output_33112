@@ -1,0 +1,638 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x9 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=122c8h ( 74440) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=000222f0 vaddr=3fc9ae00 size=03084h ( 12420) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0002537c vaddr=40374000 size=0ac9ch ( 44188) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b410h (242704) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0006b438 vaddr=4037ec9c size=0c154h ( 49492) load[0m
+[0;32mI (170) esp_image: segment 5: paddr=00077594 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) octal_psram: ECC is enabled[0m
+[0;32mI (189) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (190) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (194) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (199) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (207) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (212) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (216) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (221) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (226) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (230) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (234) esp_psram: Speed: 40MHz[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) app_init: Application information:[0m
+[0;32mI (252) app_init: Project name:     source-code[0m
+[0;32mI (256) app_init: App version:      76bc3b4-dirty[0m
+[0;32mI (261) app_init: Compile time:     Oct 19 2025 21:44:28[0m
+[0;32mI (266) app_init: ELF file SHA256:  68ebe5c9a...[0m
+[0;32mI (270) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (274) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (278) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (282) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (293) heap_init: At 3FC9E8C8 len 0004AE48 (299 KiB): RAM[0m
+[0;32mI (298) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (303) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (308) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (313) esp_psram: Adding pool of 7680K of PSRAM memory to heap allocator[0m
+[0;32mI (321) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;32mI (327) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (340) main_task: Started on CPU0[0m
+[0;32mI (370) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (370) main: Init LCD + SD...[0m
+[0;32mI (370) bsp: ST7789 init start...[0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (860) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (860) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (860) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (870) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1060) bsp: SD card mounted successfully[0m
+[0;32mI (1060) bsp: ==== SD Card Info ====[0m
+[0;32mI (1060) bsp: Name: SD32G[0m
+[0;32mI (1060) bsp: Capacity: 30436 MB[0m
+[0;32mI (1060) bsp: Speed: 40000 kHz[0m
+[0;32mI (1070) bsp: Type: SDHC/SDXC[0m
+[0;32mI (1070) bsp: ==== Listing files under: /sdcard/stv ====[0m
+[0;32mI (1080) bsp: [FILE] CDLOVE3.AVI (30499948 bytes)[0m
+[0;32mI (1080) bsp: [FILE] CDLOVE1.AVI (25605576 bytes)[0m
+[0;32mI (1080) bsp: [FILE] CDLOVE2.AVI (36760142 bytes)[0m
+[0;32mI (1090) bsp: [FILE] CDLOVE4.AVI (18352282 bytes)[0m
+[0;32mI (1090) bsp: [FILE] CDLOVE5.AVI (20459844 bytes)[0m
+[0;32mI (1100) bsp: [FILE] CDLOVE6.AVI (73066506 bytes)[0m
+[0;32mI (1100) bsp: [FILE] CDLOVE7.AVI (128649146 bytes)[0m
+[0;32mI (1100) bsp: [FILE] CDLOVE8.AVI (64718216 bytes)[0m
+[0;32mI (1110) bsp: ==== End of list ====[0m
+[0;32mI (1120) decode: playlist built: 8 files[0m
+[0;32mI (1120) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (1120) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (1120) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (1130) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (1130) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1140) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1140) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1140) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1150) main: playlist count=8[0m
+[0;32mI (1150) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1190) decode: blit_task start (Core=0)[0m
+[0;32mI (1200) decode: playlist built: 8 files[0m
+[0;32mI (1200) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (1200) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (1200) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (1200) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (1210) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1210) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1220) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1220) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1220) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1230) main_task: Returned from app_main()[0m
+[0;32mI (1230) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1240) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (1250) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1500) avifile: Find a video stream[0m
+[0;32mI (1500) avifile: Find a audio stream[0m
+[0;32mI (1500) avifile: movi pos:9906, size:30411670[0m
+[0;32mI (16720) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (16720) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (16960) avifile: Find a video stream[0m
+[0;32mI (16960) avifile: Find a audio stream[0m
+[0;32mI (16960) avifile: movi pos:9906, size:25530338[0m
+[0;32mI (19520) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (19520) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (19760) avifile: Find a video stream[0m
+[0;32mI (19760) avifile: movi pos:5678, size:36692540[0m
+[0;32mI (21100) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (21100) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (21330) avifile: Find a video stream[0m
+[0;32mI (21330) avifile: Find a audio stream[0m
+[0;32mI (21330) avifile: movi pos:9906, size:18290100[0m
+[0;32mI (22430) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (22430) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (22660) avifile: Find a video stream[0m
+[0;32mI (22660) avifile: Find a audio stream[0m
+[0;32mI (22660) avifile: movi pos:9906, size:20391950[0m
+[0;32mI (23550) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (23550) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23550) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23560) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (23560) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (23570) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (23570) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23580) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23580) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (23590) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (23590) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (23600) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23600) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23610) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (23610) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (23620) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (23620) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23630) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23630) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (23640) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (23640) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (23650) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23650) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23650) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (23660) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (23660) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (23670) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23670) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23680) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (23680) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (23690) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (23690) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23700) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23700) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (23710) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (23710) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (23720) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23720) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23730) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (23730) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (23740) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (23740) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23750) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23750) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (23760) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (23760) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (23770) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23770) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23780) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (23780) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (23790) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (23790) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23800) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23800) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (23810) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (23810) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (23820) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23820) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23830) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (23830) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (23840) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (23840) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23850) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23850) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (23860) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (23860) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (23870) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23870) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23880) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (23880) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (23890) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (23890) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23900) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23900) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (23910) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (23910) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (23920) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23920) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23920) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (23930) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (23930) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (23940) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23950) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23950) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (23950) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (23960) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (23970) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23970) vfs_fat: open: no free file descriptors[0m
+[1;31mE (23970) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (23980) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (23980) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (23990) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (23990) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24000) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (24000) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (24010) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (24010) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24020) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24020) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (24030) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (24030) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (24040) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24040) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24050) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (24050) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (24060) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (24060) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24070) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24070) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (24080) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (24080) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (24090) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24090) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24100) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (24100) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (24110) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (24110) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24120) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24120) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (24130) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (24130) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (24140) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24140) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24150) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (24150) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (24160) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (24160) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24170) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24170) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (24180) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (24180) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (24190) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24190) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24190) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (24200) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (24210) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (24210) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (24220) vfs_fat: open: no free file descriptors[0m
+[1;31mE (24220) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (24220) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (25230) avi player: AVI player deinit timeout[0m
+[0;32mI (25230) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (25230) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25230) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25240) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (25240) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (25250) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (25250) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25260) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25260) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (25270) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (25270) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (25280) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25280) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25290) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (25290) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (25300) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (25300) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25310) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25310) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (25320) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (25320) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (25330) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25330) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25340) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (25340) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (25350) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (25350) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25360) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25360) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (25370) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (25370) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (25380) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25380) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25390) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (25390) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (25400) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (25400) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25410) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25410) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (25410) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (25420) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (25430) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25430) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25430) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (25440) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (25440) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (25450) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25450) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25460) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (25460) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (25470) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (25470) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25480) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25480) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (25490) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (25490) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (25500) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25500) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25510) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (25510) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (25520) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (25520) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25530) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25530) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (25540) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (25540) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (25550) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25550) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25560) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (25560) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (25570) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (25570) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25580) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25580) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (25590) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (25590) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (25600) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25600) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25610) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (25610) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (25620) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (25620) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25630) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25630) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (25640) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (25640) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (25650) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25650) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25660) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (25660) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (25670) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (25670) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (25680) vfs_fat: open: no free file descriptors[0m
+[1;31mE (25680) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (25680) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (26690) avi player: AVI player deinit timeout[0m
+[0;32mI (26690) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (26690) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26690) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26700) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (26700) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (26710) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (26710) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26720) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26720) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (26730) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (26730) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (26740) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26740) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26750) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (26750) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (26760) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (26760) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26770) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26770) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (26780) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (26780) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (26790) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26790) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26800) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (26800) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (26810) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (26810) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26820) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26820) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (26830) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (26830) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (26840) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26840) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26850) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (26850) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (26860) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (26860) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (26870) vfs_fat: open: no free file descriptors[0m
+[1;31mE (26870) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (26870) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (27880) avi player: AVI player deinit timeout[0m
+[0;32mI (27880) decode: play file: /sdcard/stv/CDLOVE5.AVI (index=5/8)[0m
+[0;32mI (27880) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (27880) vfs_fat: open: no free file descriptors[0m
+[1;31mE (27890) avi player: Cannot open /sdcard/stv/CDLOVE5.AVI[0m
+[1;31mE (27890) decode: Failed to play /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (27900) decode: play file: /sdcard/stv/CDLOVE6.AVI (index=6/8)[0m
+[0;32mI (27900) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (27910) vfs_fat: open: no free file descriptors[0m
+[1;31mE (27910) avi player: Cannot open /sdcard/stv/CDLOVE6.AVI[0m
+[1;31mE (27920) decode: Failed to play /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (27920) decode: play file: /sdcard/stv/CDLOVE7.AVI (index=7/8)[0m
+[0;32mI (27930) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (27930) vfs_fat: open: no free file descriptors[0m
+[1;31mE (27940) avi player: Cannot open /sdcard/stv/CDLOVE7.AVI[0m
+[1;31mE (27940) decode: Failed to play /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (27950) decode: play file: /sdcard/stv/CDLOVE8.AVI (index=8/8)[0m
+[0;32mI (27950) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (27960) vfs_fat: open: no free file descriptors[0m
+[1;31mE (27960) avi player: Cannot open /sdcard/stv/CDLOVE8.AVI[0m
+[1;31mE (27970) decode: Failed to play /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (27970) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (27980) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (27980) vfs_fat: open: no free file descriptors[0m
+[1;31mE (27990) avi player: Cannot open /sdcard/stv/CDLOVE3.AVI[0m
+[1;31mE (27990) decode: Failed to play /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (28000) decode: play file: /sdcard/stv/CDLOVE1.AVI (index=2/8)[0m
+[0;32mI (28000) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (28010) vfs_fat: open: no free file descriptors[0m
+[1;31mE (28010) avi player: Cannot open /sdcard/stv/CDLOVE1.AVI[0m
+[1;31mE (28020) decode: Failed to play /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (28020) decode: play file: /sdcard/stv/CDLOVE2.AVI (index=3/8)[0m
+[0;32mI (28030) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (28030) vfs_fat: open: no free file descriptors[0m
+[1;31mE (28040) avi player: Cannot open /sdcard/stv/CDLOVE2.AVI[0m
+[1;31mE (28040) decode: Failed to play /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (28050) decode: play file: /sdcard/stv/CDLOVE4.AVI (index=4/8)[0m
+[0;32mI (28050) avi player: AVI Player Version: 2.0.0[0m
+[1;31mE (28060) vfs_fat: open: no free file descriptors[0m
+[1;31mE (28060) avi player: Cannot open /sdcard/stv/CDLOVE4.AVI[0m
+[1;31mE (28060) decode: Failed to play /sdcard/stv/CDLOVE4.AVI[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=122c8h ( 74440) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=000222f0 vaddr=3fc9ae00 size=03084h ( 12420) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0002537c vaddr=40374000 size=0ac9ch ( 44188) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b410h (242704) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0006b438 vaddr=4037ec9c size=0c154h ( 49492) load[0m
+[0;32mI (170) esp_image: segment 5: paddr=00077594 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) octal_psram: ECC is enabled[0m
+[0;32mI (189) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (190) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (194) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (199) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (207) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (212) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (216) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (221) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (226) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (230) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (234) esp_psram: Speed: 40MHz[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (252) cpu_start: Pro cpu start user code[0m
+[0;32mI (252) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (252) app_init: Application information:[0m
+[0;32mI (252) app_init: Project name:     source-code[0m
+[0;32mI (256) app_init: App version:      76bc3b4-dirty[0m
+[0;32mI (261) app_init: Compile time:     Oct 19 2025 21:44:28[0m
+[0;32mI (266) app_init: ELF file SHA256:  68ebe5c9a...[0m
+[0;32mI (270) app_init: ESP-IDF:          v5.4.1-dirty[0m
+[0;32mI (274) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (278) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (282) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (286) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (293) heap_init: At 3FC9E8C8 len 0004AE48 (299 KiB): RAM[0m
+[0;32mI (298) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (303) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (308) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (313) esp_psram: Adding pool of 7680K of PSRAM memory to heap allocator[0m
+[0;32mI (321) spi_flash: detected chip: generic[0m
+[0;32mI (323) spi_flash: flash io: dio[0m
+[0;32mI (327) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (333) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (340) main_task: Started on CPU0[0m
+[0;32mI (370) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (370) main_task: Calling app_main()[0m
+[0;32mI (370) main: Init LCD + SD...[0m
+[0;32mI (370) bsp: ST7789 init start...[0m
+[0;32mI (380) gpio: GPIO[13]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (380) gpio: GPIO[45]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (390) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (860) bsp: ST7789 init done. offset_y = 20[0m
+[0;32mI (860) gpio: GPIO[39]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (860) gpio: GPIO[40]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (870) gpio: GPIO[38]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (920) bsp: SD card mounted successfully[0m
+[0;32mI (920) bsp: ==== SD Card Info ====[0m
+[0;32mI (920) bsp: Name: SD32G[0m
+[0;32mI (920) bsp: Capacity: 30436 MB[0m
+[0;32mI (920) bsp: Speed: 40000 kHz[0m
+[0;32mI (930) bsp: Type: SDHC/SDXC[0m
+[0;32mI (930) bsp: ==== Listing files under: /sdcard/stv ====[0m
+[0;32mI (940) bsp: [FILE] CDLOVE3.AVI (30499948 bytes)[0m
+[0;32mI (940) bsp: [FILE] CDLOVE1.AVI (25605576 bytes)[0m
+[0;32mI (940) bsp: [FILE] CDLOVE2.AVI (36760142 bytes)[0m
+[0;32mI (950) bsp: [FILE] CDLOVE4.AVI (18352282 bytes)[0m
+[0;32mI (950) bsp: [FILE] CDLOVE5.AVI (20459844 bytes)[0m
+[0;32mI (960) bsp: [FILE] CDLOVE6.AVI (73066506 bytes)[0m
+[0;32mI (960) bsp: [FILE] CDLOVE7.AVI (128649146 bytes)[0m
+[0;32mI (960) bsp: [FILE] CDLOVE8.AVI (64718216 bytes)[0m
+[0;32mI (970) bsp: ==== End of list ====[0m
+[0;32mI (980) decode: playlist built: 8 files[0m
+[0;32mI (980) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (980) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (980) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (990) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (990) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1000) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1000) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1000) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1010) main: playlist count=8[0m
+[0;32mI (1010) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1050) decode: blit_task start (Core=0)[0m
+[0;32mI (1060) decode: playlist built: 8 files[0m
+[0;32mI (1060) decode: [00] /sdcard/stv/CDLOVE3.AVI[0m
+[0;32mI (1060) decode: [01] /sdcard/stv/CDLOVE1.AVI[0m
+[0;32mI (1060) decode: [02] /sdcard/stv/CDLOVE2.AVI[0m
+[0;32mI (1060) decode: [03] /sdcard/stv/CDLOVE4.AVI[0m
+[0;32mI (1070) decode: [04] /sdcard/stv/CDLOVE5.AVI[0m
+[0;32mI (1070) decode: [05] /sdcard/stv/CDLOVE6.AVI[0m
+[0;32mI (1080) decode: [06] /sdcard/stv/CDLOVE7.AVI[0m
+[0;32mI (1080) decode: [07] /sdcard/stv/CDLOVE8.AVI[0m
+[0;32mI (1080) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:2 [0m
+[0;32mI (1090) main_task: Returned from app_main()[0m
+[0;32mI (1090) decode: avi_play_task start (Core=1)[0m
+[0;32mI (1100) decode: play file: /sdcard/stv/CDLOVE3.AVI (index=1/8)[0m
+[0;32mI (1110) avi player: AVI Player Version: 2.0.0[0m
+[0;32mI (1350) avifile: Find a video stream[0m
+[0;32mI (1350) avifile: Find a audio stream[0m
+[0;32mI (1360) avifile: movi pos:9906, size:30411670[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (27) boot: ESP-IDF v5.4.1-dirty 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Oct  7 2025 21:57:51[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (28) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3c040020 size=122c8h ( 74440) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=000222f0 vaddr=3fc9ae00 size=03084h ( 12420) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0002537c vaddr=40374000 size=0ac9ch ( 44188) load[0m
+[0;32mI (116) esp_image: segment 3: paddr=00030020 vaddr=42000020 size=3b410h (242704) map[0m
+[0;32mI (159) esp_image: segment 4: paddr=0006b438 vaddr=4037ec9c size=0c154h ( 49492) load[0m
+[0;32mI (170) esp_image: segment 5: paddr=00077594 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (179) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (179) boot: Disabling RNG early entropy source...[0m
+[0;32mI (189) octal_psram: ECC is enabled[0m
+[0;32mI (189) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (189) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (190) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (194) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (199) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (203) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (207) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (212) octal_psram: BurstType    : 0x00 ( Wrap)[0m
+[0;32mI (216) octal_psram: BurstLen     : 0x03 (1024 Byte)[0m
+[0;32mI (221) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (226) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (230) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (234) esp_psram: Speed: 40MHz[0m
+[0;32mI (237) cpu_start: Multicore app[0m
+[0;32mI (252) cpu_st
