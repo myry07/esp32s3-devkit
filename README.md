@@ -7,7 +7,7 @@
 
 
 <p align="center">
-    <img src="02.hadrware//h2.jpg" alt="" width="60%"/>
+    <img src="02.hardware//h2.jpg" alt="" width="60%"/>
 </p>
 
 
