@@ -2,15 +2,15 @@
 
 
 <p align="center">
-    <img src="02.harware//h1.jpg" alt="" width="60%"/>
+    <img src="02.hardware//h1.jpg" alt="" width="60%"/>
 </p>
 
 
 <p align="center">
-    <img src="02.harware//h2.jpg" alt="" width="60%"/>
+    <img src="02.hadrware//h2.jpg" alt="" width="60%"/>
 </p>
 
 
 <p align="center">
-    <img src="02.harware//h3.jpg" alt="" width="60%"/>
+    <img src="02.hardware//h3.jpg" alt="" width="60%"/>
 </p>
